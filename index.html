@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Wash Detailing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-image: url('osu.jpg'); background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul class="navbar" >
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#sched">SCHEDULE AN APPOINTMENT</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Tagline Section -->
+  <section class="tagline-section" id="home">
+    <div class="tagline-text">
+      <h1>Car Wash Detailing</h1>
+      <h2 class="tagline">Experience the Shine: Premium Car Wash and Detailing Services</h2>
+    </div>
+    <img src="ekalam.jpg" alt="Car Wash" class="tagline-image">
+    <img src="ekalam.jpg" alt="Car Wash" class="tagline-image1">
+  </section>
+
+  <!-- Main Content -->
+  <main id="sched">
+    <section class="appointment-form" >
+      <h2>Schedule an Appointment</h2>
+      <form id="appointmentForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <select id="time" name="time" required>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+      <div id="confirmation" class="hidden">
+        <p>Thank you! Your appointment has been scheduled.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Us and Contact Section -->
+  <section class="about-contact-section" id="about">
+    <div class="about">
+      <h2>About Us</h2>
+      <p>We at Car Wash Co. provide top-notch car washing and detailing services. With a team of experts, we ensure your car looks as good as new, every time. Our aim is to offer quick, reliable, and affordable services for your convenience.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>Email: <strong>matthew.hesita26@gmail.com</strong></p>
+      <p>Phone: <strong>(63) 9267479941</strong></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
